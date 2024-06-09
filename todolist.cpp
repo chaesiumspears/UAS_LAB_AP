@@ -14,7 +14,7 @@ private:
     vector<tugas> Tugas;
 
 public:
-    void tambah(const string &description, const string &prioritas) {
+    void tambah(const string description, const string prioritas) {
         Tugas.emplace_back(description, prioritas);
         cout << "tugas berhasil ditambahkan\n";
     }
@@ -103,7 +103,7 @@ void tambah(pengaturan &manage) {
     manage.tambah(description, priority);
 }
 
-void displayTasks(const pengaturan &manage) {
+void tampilkan(const pengaturan &manage) {
     manage.tampilkan();
 }
 
@@ -115,7 +115,7 @@ void status_tugas(pengaturan &manage) {
     manage.status_tugas(index);
 }
 
-void hapus(pengaturan& manager) {
+void hapus(pengaturan &manager) {
     int index;
     cout << "Masukkan nomor tugas yang ingin dihapus: ";
     cin >> index;
