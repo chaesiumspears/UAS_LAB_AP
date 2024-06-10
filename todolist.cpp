@@ -6,7 +6,8 @@ using namespace std;
 struct tugas {
     string description,prioritas;
     bool selesai;
-    tugas(string desc, string prio) : description(desc), prioritas(prio), selesai(false) {}
+    tugas(string desc, string prio) 
+        : description(desc), prioritas(prio), selesai(false) {}
 };
 
 class pengaturan {
