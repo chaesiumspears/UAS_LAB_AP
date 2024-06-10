@@ -72,7 +72,7 @@ int main() {
         cout << "5. Keluar\n";
         cout << "Pilih opsi: ";
         cin >> choice;
-        cin.ignore(); // mengabaikan karakter newline setelah memasukkan angka
+        cin.ignore(); 
 
         switch (choice) {
             case 1:
@@ -112,7 +112,7 @@ void status_tugas(pengaturan &manage) {
     int index;
     cout << "Masukkan nomor tugas yang ingin ditandai sebagai selesai: ";
     cin >> index;
-    cin.ignore(); // mengabaikan karakter newline setelah memasukkan angka
+    cin.ignore(); 
     manage.status_tugas(index);
 }
 
@@ -120,6 +120,6 @@ void hapus(pengaturan &manager) {
     int index;
     cout << "Masukkan nomor tugas yang ingin dihapus: ";
     cin >> index;
-    cin.ignore(); // mengabaikan karakter newline setelah memasukkan angka
+    cin.ignore();
     manager.hapus(index);
 }
